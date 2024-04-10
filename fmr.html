@@ -1,0 +1,282 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>FMR Concepts</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/argo.css" rel="stylesheet">
+	    <!--<link href="https://usaa.experiandirect.com/Content/afMemberUSAA/css?v=1Dm9ExjiLB9E8ogK-gsekQoXLsVmjjQB-0qYbC14sBo1" rel="stylesheet">-->
+		<style>
+	      body {
+	        padding-top: 70px; padding-bottom: 60px;
+	      }
+	    </style>
+
+	</head>
+  
+	<body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+			
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+					 HTML/CSS Sandbox
+					</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="header-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#headings">Headings</a></li>
+								<li><a href="#content-formatting">Content</a></li>
+								<li><a href="#tables">Tables</a></li>
+								<li><a href="#forms">Forms</a></li>
+								<li><a href="#images">Images</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li class="dropdown-header">Custom</li>
+								<li><a href="#top">Partner Branding &amp; Style</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Standard Components</li>
+								<li><a href="#buttons">Buttons</a></li>
+								<li><a href="#dropdowns">Dropdowns</a></li>
+								<li><a href="#input-groups">Input Groups</a></li>
+								<li><a href="#navs">Navs</a></li>
+								<li><a href="#navbar">Navbar</a></li>
+								<li><a href="#pagination">Pagination</a></li>
+								<li><a href="#alerts">Alerts</a></li>
+								<li><a href="#labels">Labels</a></li>
+								<li><a href="#progress">Progress</a></li>
+								<li><a href="#media-object">Media Object</a></li>
+								<li><a href="#list-groups">List Groups</a></li>
+								<li><a href="#panels">Panels</a></li>
+								<li><a href="#wells">Wells</a></li>
+								<li><a href="#js_stuff">Javascript</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Source <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li class="dropdown-header">CSS Files</li>
+								<li><a href="../dist/css/bootstrap.css">bootstrap.css</a></li>
+								<li><a href="../dist/css/bootstrap.min.css">bootstrap.min.css</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">LESS Files</li>
+								<li><a href="../less/variables.less">variables.less</a></li>
+								<li><a href="../less/theme.less">theme.less</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div><!--/.container-->
+	    </nav>
+    	<div class="container">
+    		<h1 id="bs" class="page-header">Fair Market Range Widget <small>HTML Concepts</small></h1>
+			<div class="jumbotron">
+		        <h1>
+		           FMR Goodness
+		        </h1>
+	        	<p>Rough HTML pages to test concepts, semantics and accessibility.</p>
+	        	<p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+	      	</div>
+	      	<!-- ROW 1 -->
+	      	<h3>Sample DL List Elements - No Styling Applied</h3>
+	      	<div class="row">
+	      		<div class="col-md-5">
+	      			<div class="panel panel-default" id="headings">
+	      				<div class="panel-heading">Simple DL Structure - Used Car Pricing</div>
+            			<div class="panel-body">
+            				<dl title="Kelley Blue Book Used Car Pricing">
+            					<div>
+            						<dt>Fair Market Range</dt>
+            						<dd>$1000 - $2000</dd>
+            					</div>
+            					<div>
+            						<dt>Fair Purchase Price</dt>
+            						<dd>$1500</dd>
+            					</div>
+            					<div>
+            						<dt>Typical Listing Price</dt>
+            						<dd>$1350</dd>
+            					</div>
+            				</dl>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-md-7">
+            		<div class="panel panel-default" id="content-formatting">
+            			<div class="panel-heading">This example uses microdata attributes in a DL element, together with the div element, to annotate the ice cream desserts at a French restaurant.</div>
+            			<div class="panel-body">
+            				<dl title="Kelley Blue Book Ice Cream Dessert Prices">
+							 <div itemscope itemtype="http://schema.org/Product">
+							  <dt itemprop="name">Café ou Chocolat Liégeois
+							  <dd itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+							   <span itemprop="price">3.50</span>
+							   <data itemprop="priceCurrency" value="EUR">€</data>
+							  <dd itemprop="description">
+							   2 boules Café ou Chocolat, 1 boule Vanille, sauce café ou chocolat, chantilly
+							 </div>
+
+							 <div itemscope itemtype="http://schema.org/Product">
+							  <dt itemprop="name">Américaine
+							  <dd itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+							   <span itemprop="price">3.50</span>
+							   <data itemprop="priceCurrency" value="EUR">€</data>
+							  <dd itemprop="description">
+							   1 boule Crème brûlée, 1 boule Vanille, 1 boule Caramel, chantilly
+							 </div>
+							</dl>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+      		<!-- ROW 2 -->
+      		<h3>Progressive Visual Enhancements Using CSS</h3>
+      		<div class="row">
+	      		<div class="col-md-4">
+	      			<div class="panel panel-default" id="headings">
+	      				<div class="panel-heading">DL Structure - No CSS</div>
+            			<div class="panel-body">
+            				<dl title="Kelley Blue Book Used Car Pricing">
+            					<div>
+            						<dt>Fair Market Range</dt>
+            						<dd>$1000 - $2000</dd>
+            					</div>
+            					<div>
+            						<dt>Fair Purchase Price</dt>
+            						<dd>$1500</dd>
+            					</div>
+            					<div>
+            						<dt>Typical Listing Price</dt>
+            						<dd>$1350</dd>
+            					</div>
+            				</dl>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-md-4">
+            		<div class="panel panel-default" id="content-formatting">
+            			<div class="panel-heading">DL Structure with some basic CSS</div>
+            			<div class="panel-body text-center">
+            				<dl class="fmr" title="Kelley Blue Book Used Car Pricing">
+            					<div>
+            						<dt>Fair Market Range</dt>
+            						<dd>$1000 - $2000</dd>
+            					</div>
+            					<div>
+            						<dt>Fair Purchase Price</dt>
+            						<dd>$1500</dd>
+            					</div>
+            					<div>
+            						<dt>Typical Listing Price</dt>
+            						<dd>$1350</dd>
+            					</div>
+            				</dl>
+            				<div class="fmr_container">
+            				</div>
+            			</div>
+          			</div>
+        		</div>
+        		<div class="col-md-4">
+            		<div class="panel panel-default" id="content-formatting">
+            			<div class="panel-heading">DL Structure with a little more CSS</div>
+            			<div class="panel-body text-center">
+            				<dl class="fmr2" title="Kelley Blue Book Used Car Pricing">
+            					<div class="fmr_range">
+            						<dt>Fair Market Range</dt>
+            						<dd>$1000 - $2000</dd>
+            					</div>
+            					<div class="fmr_float">
+            						<dt>Fair Purchase Price</dt>
+            						<dd>$1500</dd>
+            					</div>
+            					<div class="fmr_float">
+            						<dt>Typical Listing Price</dt>
+            						<dd>$1550</dd>
+            					</div>
+            			
+            				</dl>
+            				<div class="fmr_container2" title="Visual element - Kelley Blue Book price advisor">
+            				</div>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+      		<!-- ROW 3 -->
+      		<h3>Compare HTML Structures</h3>
+      		<div class="row">
+	      		<div class="col-md-6">
+	      			<div class="panel panel-default" id="headings">
+	      				<div class="panel-heading">Widget rendered as an OBJECT element (current code)</div>
+            			<div class="panel-body text-center">
+            				<object title="price advisor" style="margin-top:-36px; margin-bottom:-36px;" aria-label="price advisor" id="priceAdvisor" width="300" height="360" type="image/svg+xml" data="https://upa-prp.syndication.kbb.com/usedcar/?apikey=76a9532b-fa54-4d02-8e6a-91c3fb85376c&amp;zipcode=92870&amp;vehicleid=444954&amp;pricetype=retail&amp;condition=verygood&amp;format=svg"></object>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="panel panel-default" id="content-formatting">
+            			<div class="panel-heading">DL Structure With CSS</div>
+            			<div class="panel-body text-center">
+            				<dl class="fmr3" title="Kelley Blue Book Used Car Pricing">
+            					<div class="fmr_range range3">
+            						<dt>Fair Market Range</dt>
+            						<dd>$1000 - $2000</dd>
+            					</div>
+            					<div class="fmr_float">
+            						<dt>Fair Purchase Price</dt>
+            						<dd>$1500</dd>
+            					</div>
+            					<div class="fmr_float">
+            						<dt>Typical Listing Price</dt>
+            						<dd>$1550</dd>
+            					</div>
+            			
+            				</dl>
+            				<div class="fmr_container3">
+            				</div>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+    	</div><!-- /.container -->
+    	<footer class="">
+    		<div class="container">
+    			<ul class="list-inline">
+    				<li class="list-inline-item">FAQ</li>
+    				<li class="list-inline-item">Contact Us</li>
+    				<li class="list-inline-item">About Us</li>
+    				<li class="list-inline-item">Careers</li>
+    				<li class="list-inline-item">Corporate</li>
+    				<li class="list-inline-item">Advertising</li>
+    				<li class="list-inline-item">Media</li>
+    				<li class="list-inline-item">Sitemap</li>
+    				<li class="list-inline-item">KBB Brazil</li>
+    			</ul>
+		    <p>Footer Content Here</p>
+			</div>
+		</footer>
+	
+		<!-- JS -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jqstuff.js"></script><!-- / JS -->
+
+	</body>
+
+</html>
