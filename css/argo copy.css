@@ -1,0 +1,188 @@
+/* basic overrides */
+body {background:#efeeee;}
+
+/* screen size widget*/
+#screenSize {z-index:800;float:left;position:fixed; bottom:10px; right: 10px;}
+
+.logoIcon {display:inline-block;width:48px;height:48px;background: url('../images/usaaLogo32.png') scroll 50% 50% no-repeat;}
+.header {padding:14px 0;}
+.header h1 {margin:0;padding:0;}
+.pagination {margin:0 0 20px 0;}
+.breadcrumb {margin: 8px 0;}
+.navbar {margin:0;}
+.panel-heading {overflow:hidden;}
+
+#linkList p {margin:6px 0 0 0;}
+
+/* NAV BAR */
+.navbar-inverse {
+    background-color: #01253d;
+    border-color: #01253d;
+    border-bottom: solid 5px #b4b4b4;
+}
+.navbar-inverse .navbar-brand {
+    color: #1c86b9;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #eee;
+}
+
+/* PAGE TOP */
+.page-header {
+    padding-bottom: 9px;
+    margin: 20px 0;
+    border-bottom: 1px solid #b4b4b4;
+}
+.pageTop {
+padding:12px 0px;
+}
+li.userName {
+font-size:16px;
+}
+
+/* PANELS */
+.panel-default>.panel-heading {
+  color: #00253d;
+  background-color: #fff;
+  border-color: #b4b4b4;
+}
+.panel .panel-heading {}
+.panel-heading {
+  padding: 15px 20px;
+  border-bottom: 1px solid #b4b4b4;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.panel-link{
+	cursor:pointer;
+}
+.panel-link:hover{
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(239,239,239,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(239,239,239,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+
+}
+.panel-link h3{
+	color:#1c86b9;
+	background: url(../images/panel-link.png) no-repeat 100% 50%;
+}
+.panel-title{
+  font-size: 24px;
+}
+.panel .panel-body {
+  color: #727272;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+/* END PANELS */
+
+/* NEW ALERTS */
+.newAlerts {
+border:solid 2px #043249;
+color:#1c86b9;
+}
+
+/* score widget */
+.score {float: left;width: 42%;height: 100%;}
+.score-chart {display: block;margin: 0 auto;background: url(../images/score-bg.svg) no-repeat 50% 0;width: 154px;height: 82px;background-size: 100%;}
+
+p.score-outof {font-weight:bold;font-size:1.5em;}
+span.score-outof-large {display:block;font-size:2.7em;padding:0;margin:0;line-height:1;}
+#showFactorsPanel p.score-outof {font-size:1em;}
+#scoreFactors {}
+.infoWell {padding:0 12px;text-align:left;}
+
+/* ALERTS */
+.alertWell {margin:12px 0;}
+.msgText {color:#428bca;;font-size:.9em;background-color: @brand-primary;padding:8px 12px;border-radius: 4px;border:solid 1px #ddd;}
+.media, .media-body {overflow:inherit;} /* fixes media panel layout issue in FF */
+#alertPager li.pull-right {margin:0 0 0 8px;} /* adds margin to pull-right prev/next buttons */
+.alertIcon {border:solid 1px red;margin:0 27px 0 0;}
+
+/* MODALS */
+.modal-header.success {
+background-color: #428bca;
+color:#fff;
+}
+
+/* SCORE PLANNER */
+#scoreDisplay {overflow:hidden;}
+#scoreForm div.form-group {overflow:hidden;clear:both;}
+#scoreForm label {display:block;}
+input[type=range].slider {width:80%;float:left;}
+input[type=text].sliderText {width:18%;float:right;}
+
+/* RESOURCE CENTER */
+.borderBottom {border-bottom:solid 1px #eee;padding-bottom:5px;margin-bottom:15px;}
+
+/* FOOTER */
+footer {font-size:0.9em;}
+footer p {margin:0;float:left;}
+footer ul {margin:0;float:right;text-align:right;}
+
+/* ACCOUNT PAGE
+.dl-horizontal.accountinfo dt{border:solid 1px blue;}
+.dl-horizontal.accountinfo dd{border:solid 1px orange;}
+*/
+
+/*
+#helpHurt.nav-pills > li.active > a,
+#helpHurt.nav-pills > li.active > a:hover,
+#helpHurt.nav-pills > li.active > a:focus {
+color:#333;
+border:solid 1px #999;color: #333;
+background-color: #e6e6e6;
+border-color: #adadad;
+-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+*/
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 768px) {
+  #poweredBy {
+	text-align:right;
+  }
+}
+
+/* small devices */
+@media screen and (max-width: 768px) {
+  .pageTitle  h3 {
+	margin:8px 0;
+	font-size:20px;
+  }
+  #alertList {
+	margin:0 0 8px 0;
+  }
+  #prodName h1 {
+	font-size: 2.2em;
+  }
+  .breadcrumb {
+	margin:8px 0;
+	}
+  #alertPager {
+	display:block !important;
+	visibility: visible !important;
+	}
+  #alertPager.pager li>a, .pager li>span {
+	padding:4px 8px;
+	border-radius: 8px;
+	}
+	.navbar {
+	margin:8px 0;
+	}
+	.footerLinks {float:none;text-align:left;}
+}
+
+/* extra small devices */
+@media screen and (max-width: 600px) {
+  #poweredBy h5 {margin:0;}
+  .breadcrumb {padding:4px 8px;}
+  .colFull{padding-right:0px;padding-left:0px;}
+  .panel {border-radius:0px;}
+}
