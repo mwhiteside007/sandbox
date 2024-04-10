@@ -16,7 +16,7 @@ h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .s
     font-size: 55%;
     display: block;
     padding-top:8px;
-    color:#333;
+    color:red;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
