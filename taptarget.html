@@ -1,0 +1,204 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>CSS Tap Target Experiment</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/argo.css" rel="stylesheet">
+	    <!--<link href="https://usaa.experiandirect.com/Content/afMemberUSAA/css?v=1Dm9ExjiLB9E8ogK-gsekQoXLsVmjjQB-0qYbC14sBo1" rel="stylesheet">-->
+		<style>
+	      body {
+	        padding-top: 70px; padding-bottom: 60px;
+	      }
+	    </style>
+
+	</head>
+  
+	<body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+			
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+					Navbar Placeholder (Non functional)
+					</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="header-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#headings">Headings</a></li>
+								<li><a href="#content-formatting">Content</a></li>
+								<li><a href="#tables">Tables</a></li>
+								<li><a href="#forms">Forms</a></li>
+								<li><a href="#images">Images</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li class="dropdown-header">Custom</li>
+								<li><a href="#top">Partner Branding &amp; Style</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Standard Components</li>
+								<li><a href="#buttons">Buttons</a></li>
+								<li><a href="#dropdowns">Dropdowns</a></li>
+								<li><a href="#input-groups">Input Groups</a></li>
+								<li><a href="#navs">Navs</a></li>
+								<li><a href="#navbar">Navbar</a></li>
+								<li><a href="#pagination">Pagination</a></li>
+								<li><a href="#alerts">Alerts</a></li>
+								<li><a href="#labels">Labels</a></li>
+								<li><a href="#progress">Progress</a></li>
+								<li><a href="#media-object">Media Object</a></li>
+								<li><a href="#list-groups">List Groups</a></li>
+								<li><a href="#panels">Panels</a></li>
+								<li><a href="#wells">Wells</a></li>
+								<li><a href="#js_stuff">Javascript</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Source <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li class="dropdown-header">CSS Files</li>
+								<li><a href="../dist/css/bootstrap.css">bootstrap.css</a></li>
+								<li><a href="../dist/css/bootstrap.min.css">bootstrap.min.css</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">LESS Files</li>
+								<li><a href="../less/variables.less">variables.less</a></li>
+								<li><a href="../less/theme.less">theme.less</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div><!--/.container-->
+	    </nav>
+    	<div class="container">
+    		<h1 id="bs" class="page-header">Reduce Visible Spacing <small>HTML and CSS Concepts</small></h1>
+			<div class="jumbotron">
+		        <h1>
+		           Tap Target Experiment
+		        </h1>
+	        	<p>Many of our Argo components retain a fixed size for accessibilty that forces them to take up a lot of physical space in the presentation. Is there a way to reduce the physical size while retaining the 48px tap target size?</p>
+	        	<p><a class="btn btn-primary btn-lg" title="Link to KKB" href="https://www.kbb.com/" target="_blank">See Example &raquo;</a></p>
+	        	<p class= "small">Hint: Scroll to the link lists at the bottom of the page.</p>
+	      	</div>
+	      	<!-- ROW 1 -->
+	      	<div class="row">
+	      		<div class="col-md-6">
+	      			<div class="panel panel-default" id="headings">
+	      				<div class="panel-heading">Negative Margin Experiments - Text Links</div>
+            			<div class="panel-body">
+            				<section>
+            					<h5>Line Breaks + Negative Margin Applied</h3>
+	            				<a href class="TapTarget NegMargin">
+	            					Click here to go somewhere
+	            				</a>
+
+	            				<br />
+	            				<a href class="TapTarget NegMargin">
+	            					Click here to go somewhere
+	            				</a>
+	            				<br />
+	            				<a href class="TapTarget NegMargin">
+	            					Click here to go somewhere
+	            				</a>
+	            				<br />
+	            				<a href class="TapTarget NegMargin">
+	            					Click here to go somewhere
+	            				</a>
+	            			</section>
+	            			<section>
+            					<h5>Unordered List - Negative Margin</h3>
+            					<ul>
+            					<li>
+            						<a href class="TapTarget NegMargin">Click here to go somewhere</a>
+            					</li>
+            					<li>
+            						<a href class="TapTarget NegMargin">Click here to go somewhere</a>
+            					</li>
+            					<li>
+            						<a href class="TapTarget NegMargin">Click here to go somewhere</a>
+            					</li>
+            					<li>
+            						<a href class="TapTarget NegMargin">Click here to go somewhere</a>
+            					</li>
+            					</ul>
+            				</section>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-md-6">
+	      			<div class="panel panel-default" id="headings">
+	      				<div class="panel-heading">Negative Margin - Radios and Checkbox</div>
+            			<div class="panel-body">
+	            			<section>
+            					<h5>Radio Buttons with 48px Target</h3>
+	            				<label class="TapTargetLabel">
+								    <input type="radio" name="choice" value="ranch" /> Doritos Cool Ranch
+								</label>
+								<label class="TapTargetLabel">
+								    <input type="radio" name="choice" value="bbq" /> BBQ Flavor Potato Chips
+								</label>
+								<p>Testing to see if the negative margin works without pushing this content down visually.</p>
+	            			</section>
+	            			<section>
+            					<h5>Checkboxes with 48px Target</h3>
+
+									<input type="checkbox" id="scales" name="scales" checked />
+									<label class="TapTargetLabel" for="scales">Scales</label>
+
+									<input type="checkbox" id="horns" name="horns" />
+									<label class="TapTargetLabel" for="horns">Horns</label>
+
+									<input type="checkbox" id="fangs" name="fangs" />
+									<label class="TapTargetLabel" for="fangs">Fangs</label>
+										
+            						
+								<p>Testing to see if the negative margin works without pushing this content down visually.</p>
+	            			</section>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+            <!-- / ROW 1 -->
+      		
+    	</div><!-- /.container -->
+    	<footer class="">
+    		<div class="container">
+    			<ul class="list-inline">
+    				<li class="list-inline-item">FAQ</li>
+    				<li class="list-inline-item">Contact Us</li>
+    				<li class="list-inline-item">About Us</li>
+    				<li class="list-inline-item">Careers</li>
+    				<li class="list-inline-item">Corporate</li>
+    				<li class="list-inline-item">Advertising</li>
+    				<li class="list-inline-item">Media</li>
+    				<li class="list-inline-item">Sitemap</li>
+    				<li class="list-inline-item">KBB Brazil</li>
+    			</ul>
+		    <p>Footer Content Here</p>
+			</div>
+		</footer>
+	
+		<!-- JS -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jqstuff.js"></script><!-- / JS -->
+
+	</body>
+
+</html>
