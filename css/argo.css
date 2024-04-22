@@ -515,7 +515,7 @@ ul.list-dealerphone {
     color: #eee;
 }
 a.navbar-brand {
-    margin-top:-17px;
+    /* margin-top:-17px; */
 }
 ul.navbar-nav {
     height:64px;
