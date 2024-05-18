@@ -506,7 +506,7 @@ ul.list-dealerphone {
 .navbar-inverse {
     background-color: #1F3E74;
     border-color: #01253d;
-    height:64px;
+    /* height:64px; */
 }
 .navbar-inverse .navbar-brand {
     color: #1c86b9;
@@ -518,14 +518,14 @@ a.navbar-brand {
     /* margin-top:-17px; */
 }
 ul.navbar-nav {
-    height:64px;
+    /* height:64px; */
 }
 .navbar-nav>li {
-    xheight:64px;
+    /* height:64px; */
 }
 .navbar-nav>li>a {
-    xheight:64px;
-    padding: 22px 15px;
+    /* height:64px; 
+    padding: 22px 15px; */
 }
 
 /* PAGE TOP */
