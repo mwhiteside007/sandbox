@@ -1,0 +1,251 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Select List Concepts</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/argo.css" rel="stylesheet">
+	    <!--<link href="https://usaa.experiandirect.com/Content/afMemberUSAA/css?v=1Dm9ExjiLB9E8ogK-gsekQoXLsVmjjQB-0qYbC14sBo1" rel="stylesheet">-->
+		<style>
+	      body {
+	        padding-top: 70px; padding-bottom: 60px;
+	      }
+	    </style>
+
+	</head>
+  
+	<body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+			
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+					 KBB.Com Navigation Bar
+					</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="header-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#headings">Headings</a></li>
+								<li><a href="#content-formatting">Content</a></li>
+								<li><a href="#tables">Tables</a></li>
+								<li><a href="#forms">Forms</a></li>
+								<li><a href="#images">Images</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li class="dropdown-header">Custom</li>
+								<li><a href="#top">Partner Branding &amp; Style</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Standard Components</li>
+								<li><a href="#buttons">Buttons</a></li>
+								<li><a href="#dropdowns">Dropdowns</a></li>
+								<li><a href="#input-groups">Input Groups</a></li>
+								<li><a href="#navs">Navs</a></li>
+								<li><a href="#navbar">Navbar</a></li>
+								<li><a href="#pagination">Pagination</a></li>
+								<li><a href="#alerts">Alerts</a></li>
+								<li><a href="#labels">Labels</a></li>
+								<li><a href="#progress">Progress</a></li>
+								<li><a href="#media-object">Media Object</a></li>
+								<li><a href="#list-groups">List Groups</a></li>
+								<li><a href="#panels">Panels</a></li>
+								<li><a href="#wells">Wells</a></li>
+								<li><a href="#js_stuff">Javascript</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Source <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li class="dropdown-header">CSS Files</li>
+								<li><a href="../dist/css/bootstrap.css">bootstrap.css</a></li>
+								<li><a href="../dist/css/bootstrap.min.css">bootstrap.min.css</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">LESS Files</li>
+								<li><a href="../less/variables.less">variables.less</a></li>
+								<li><a href="../less/theme.less">theme.less</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div><!--/.container-->
+	    </nav>
+    	<div class="container">
+    		<h1 id="bs" class="page-header"> Select Lists and Option Group <small>HTML Concepts</small></h1>
+			<!--<div class="jumbotron">
+		        <h1>
+		           Argo Drop Down Concepts
+		        </h1>
+	        	<p>Rough HTML pages to test concepts, page speed, semantics and accessibility.</p>
+	        	<p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+	      	</div>-->
+	      	
+
+	      	<!-- ROW 2-->
+	      	<h3>Vehicle Category Select List</h3>
+	      	<div class="row">
+	      		<div class="col-md-4">
+            		<div class="panel panel-default" id="content-formatting">
+            			<div class="panel-heading">Select List with Opt Group</div>
+            			<div class="panel-body">
+            				<label class="blockLabel" for="cars2">Choose a Deal Category:</label>
+            				<select placeholder="" id="cars2" class="css-6icdca e1c5k7mc0 form-select form-select-lg mb-3" aria-labelledby="LuxuryCarDropdown">
+            					
+            					<optgroup label="Seasonal">
+            						<option value="Minivan" data-testid="dropdown_option_21">Best Summer Deals</option>
+            						<option value="Van" data-testid="dropdown_option_19">Best After School Deals</option>
+            					</optgroup>
+
+            					<optgroup label="APR">
+            						<option value="Minivan" data-testid="dropdown_option_21">Best 0% Financing Deals</option>
+            					</optgroup>
+
+            					<optgroup label="Lease">
+            						<option value="Van" data-testid="dropdown_option_19">Best Lease Deals Under $200</option>
+            						<option value="Van" data-testid="dropdown_option_19">Best Lease Deals Under $300</option>
+            					</optgroup>
+
+            					<optgroup label="Car">
+            						<option value="CompactCar" data-testid="dropdown_option_14" selected="selected">Top 10 Best Car Deals</option>
+            						<option value="SubcompactCar" data-testid="dropdown_option_13">Best Car Lease Deals</option>
+            					</optgroup>
+
+            					<optgroup label="SUV and Crossover">
+            						<option value="SubcompactSUVCrossover" data-testid="dropdown_option_26">Best SUV & Crossover Deals</option>
+            						<option value="CompactSUVCrossover" data-testid="dropdown_option_18">Best SUV & Crossover Deals Under $300</option>
+            						<option value="MidsizeSUVCrossover" data-testid="dropdown_option_10">Best SUV & Crossover Lease Deals</option>
+            					</optgroup>
+
+            					<optgroup label="Truck">
+            						<option value="MidsizePickupTruck" data-testid="dropdown_option_20">Best Truck Deals</option>
+            						<option value="FullsizePickupTruck" data-testid="dropdown_option_12">Best Truck Lease Deals</option>
+            					</optgroup>
+
+            					<optgroup label="EV and Hybrid">
+            						<option value="ElectricVehicle" data-testid="dropdown_option_25">Best Electric Car Deals</option>
+            						<option value="HybridAlternativeEnergyCar" data-testid="dropdown_option_24">Best Hybrid/Alternative Energy Deals</option>
+            					</optgroup>
+
+            					<optgroup label="Used Vehiclea">
+            						<option value="ElectricVehicle" data-testid="dropdown_option_25">Best Used Car Deals</option>
+            						<option value="HybridAlternativeEnergyCar" data-testid="dropdown_option_24">Best Used SUV Deals</option>
+            					</optgroup>
+
+
+            				</select>
+            			</div>
+          			</div>
+        		</div>
+	      		<div class="col-md-4">
+	      			<div class="panel panel-default" id="headings">
+	      				<div class="panel-heading">Select List Element Code From Site</div>
+            			<div class="panel-body">
+            				<label class="blockLabel" for="cars">Choose a Vehicle Type:</label>
+            				<select placeholder="" class="css-6icdca e1c5k7mc0" aria-labelledby="LuxuryCarDropdown" id="cars"><option value="LuxuryCar" data-testid="dropdown_option_1">Luxury Car</option><option value="EntrylevelLuxuryCar" data-testid="dropdown_option_2">Entry-level Luxury Car</option><option value="LuxuryMidsizeSUVCrossover" data-testid="dropdown_option_3">Luxury Mid-size SUV/Crossover</option><option value="SportyCompactCar" data-testid="dropdown_option_4">Sporty Compact Car</option><option value="HighendLuxuryCar" data-testid="dropdown_option_5">High-end Luxury Car</option><option value="LuxurySportsCar" data-testid="dropdown_option_6">Luxury Sports Car</option><option value="LuxuryHighPerformanceCar" data-testid="dropdown_option_7">Luxury High Performance Car</option><option value="LuxuryCompactSUV/Crossover" data-testid="dropdown_option_8">Luxury Compact SUV/Crossover</option><option value="FullsizeCar" data-testid="dropdown_option_9">Full-size Car</option><option value="MidsizeSUVCrossover" data-testid="dropdown_option_10">Mid-size SUV/Crossover</option><option value="LuxuryFullsizeSUVCrossover" data-testid="dropdown_option_11">Luxury Full-size SUV/Crossover</option><option value="FullsizePickupTruck" data-testid="dropdown_option_12">Full-size Pickup Truck</option><option value="SubcompactCar" data-testid="dropdown_option_13">Subcompact Car</option><option value="CompactCar" data-testid="dropdown_option_14">Compact Car</option><option value="MidsizeCar" data-testid="dropdown_option_15">Mid-size Car</option><option value="HighPerformanceCar" data-testid="dropdown_option_16">High Performance Car</option><option value="SportsCar" data-testid="dropdown_option_17">Sports Car</option><option value="CompactSUVCrossover" data-testid="dropdown_option_18">Compact SUV/Crossover</option><option value="Van" data-testid="dropdown_option_19">Van</option><option value="MidsizePickupTruck" data-testid="dropdown_option_20">Mid-size Pickup Truck</option><option value="Minivan" data-testid="dropdown_option_21">Minivan</option><option value="Exotics" data-testid="dropdown_option_22">Exotics</option><option value="FullSizeSUVCrossover" data-testid="dropdown_option_23">Full-Size SUV/Crossover</option><option value="HybridAlternativeEnergyCar" data-testid="dropdown_option_24">Hybrid/Alternative Energy Car</option><option value="ElectricVehicle" data-testid="dropdown_option_25">Electric Vehicle</option><option value="SubcompactSUVCrossover" data-testid="dropdown_option_26">Subcompact SUV/Crossover</option><option value="LuxurySubcompactSUVCrossover" data-testid="dropdown_option_27">Luxury Subcompact SUV/Crossover</option></select>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-md-4">
+            		<div class="panel panel-default" id="content-formatting">
+            			<div class="panel-heading">Select List with Opt Group</div>
+            			<div class="panel-body">
+            				<label class="blockLabel" for="cars2">Choose a Vehicle Type:</label>
+            				<select placeholder="" id="cars2" class="css-6icdca e1c5k7mc0 form-select form-select-lg mb-3" aria-labelledby="LuxuryCarDropdown">
+            					<optgroup label="Car">
+            						<option value="SubcompactCar" data-testid="dropdown_option_13">Subcompact Car</option>
+            						<option value="CompactCar" data-testid="dropdown_option_14">Compact Car</option>
+            						<option value="SportyCompactCar" data-testid="dropdown_option_4">Sporty Compact Car</option>
+            						<option value="MidsizeCar" data-testid="dropdown_option_15">Mid-size Car</option>
+            						<option value="FullsizeCar" data-testid="dropdown_option_9">Full-size Car</option>
+            					</optgroup>
+
+            					<optgroup label="Exotic and High Performance">
+            						<option value="Exotics" data-testid="dropdown_option_22">Exotics</option>
+            						<option value="HighPerformanceCar" data-testid="dropdown_option_16">High Performance Car</option>
+            						<option value="SportsCar" data-testid="dropdown_option_17">Sports Car</option>
+            					
+            					</optgroup>
+
+            					<optgroup label="EV and Hybrid">
+            						<option value="ElectricVehicle" data-testid="dropdown_option_25">Electric Vehicle</option>
+            						<option value="HybridAlternativeEnergyCar" data-testid="dropdown_option_24">Hybrid/Alternative Energy Car</option>
+            					</optgroup>
+
+            					<optgroup label="Luxury Car">
+            						<option value="EntrylevelLuxuryCar" data-testid="dropdown_option_2">Entry-level Luxury Car</option>
+            						<option value="LuxuryCar" data-testid="dropdown_option_1">Luxury Car</option>
+            						<option value="LuxurySportsCar" data-testid="dropdown_option_6">Luxury Sports Car</option>
+            						<option value="HighendLuxuryCar" data-testid="dropdown_option_5">High-end Luxury Car</option>
+            						<option value="LuxuryHighPerformanceCar" data-testid="dropdown_option_7">Luxury High Performance Car</option>
+            					</optgroup>
+            					<optgroup label="Luxury SUV/Crossover">	
+            						<option value="LuxuryCompactSUV/Crossover" data-testid="dropdown_option_8">Luxury Compact SUV/Crossover</option>
+            						<option value="LuxurySubcompactSUVCrossover" data-testid="dropdown_option_27">Luxury Subcompact SUV/Crossover</option>
+            						<option value="LuxuryMidsizeSUVCrossover" data-testid="dropdown_option_3">Luxury Mid-size SUV/Crossover</option>
+            						<option value="LuxuryFullsizeSUVCrossover" data-testid="dropdown_option_11">Luxury Full-size SUV/Crossover</option>
+            					</optgroup>
+            					
+            					
+            					<optgroup label="SUV and Crossover">
+            						<option value="SubcompactSUVCrossover" data-testid="dropdown_option_26">Subcompact SUV/Crossover</option>
+            						<option value="CompactSUVCrossover" data-testid="dropdown_option_18" selected="selected">Compact SUV/Crossover</option>
+            						<option value="MidsizeSUVCrossover" data-testid="dropdown_option_10">Mid-size SUV/Crossover</option>
+            						<option value="FullSizeSUVCrossover" data-testid="dropdown_option_23">Full-Size SUV/Crossover</option>
+            					</optgroup>
+            					<optgroup label="Truck">
+            						<option value="MidsizePickupTruck" data-testid="dropdown_option_20">Mid-size Pickup Truck</option>
+            						<option value="FullsizePickupTruck" data-testid="dropdown_option_12">Full-size Pickup Truck</option>
+            					</optgroup>
+            					<optgroup label="Van">
+            						<option value="Minivan" data-testid="dropdown_option_21">Minivan</option>
+            						<option value="Van" data-testid="dropdown_option_19">Van</option>
+            					</optgroup>
+            				</select>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+      		<!-- / ROW 2 -->
+      		
+    	</div><!-- /.container -->
+    	<footer class="">
+    		<div class="container">
+    			<ul class="list-inline">
+    				<li class="list-inline-item">FAQ</li>
+    				<li class="list-inline-item">Contact Us</li>
+    				<li class="list-inline-item">About Us</li>
+    				<li class="list-inline-item">Careers</li>
+    				<li class="list-inline-item">Corporate</li>
+    				<li class="list-inline-item">Advertising</li>
+    				<li class="list-inline-item">Media</li>
+    				<li class="list-inline-item">Sitemap</li>
+    				<li class="list-inline-item">KBB Brazil</li>
+    			</ul>
+		    <p>Footer Content Here</p>
+			</div>
+		</footer>
+	
+		<!-- JS -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jqstuff.js"></script><!-- / JS -->
+
+	</body>
+
+</html>
